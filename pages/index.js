@@ -5,7 +5,7 @@ export default class Index extends React.Component {
         return (
             <div>
                 <div>Hello</div>
-                <div><img src={require('../statics/images/test.png')} alt="tes"/></div>
+                <div><img src={require('../static/images/test.png')} alt="tes"/></div>
             </div>
         );
     }

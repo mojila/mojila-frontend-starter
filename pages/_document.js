@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-reboot.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 // Custom CSS
-import '../statics/styles/main.css';
+import '../static/styles/main.css';
 
 export default class MyDocument extends Document {
     render() {
