@@ -1,3 +1,13 @@
 .pointer {
     cursor: pointer;
 }
+
+.h-10-vh {
+    height: 10vh !important;
+}
+
+.h-90-vh {
+    height: 90vh !important;
+}
+
+.menu-item:hover { background-color: #fff; color: #444; }

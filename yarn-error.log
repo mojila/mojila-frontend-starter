@@ -25,7 +25,7 @@ npm manifest:
   {
     "name": "next-sim",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "home.js",
     "license": "MIT",
     "dependencies": {
       "@zeit/next-css": "^0.2.0",
