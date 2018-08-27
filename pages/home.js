@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Navigator, {Brand, Menu, MenuItem} from "../shared-components/navigator";
 import Content from "../shared-components/content";
 import Wrapper from "../shared-components/wrapper";
+import Router from 'next/router';
 
 const Recent = props => {
     return (
@@ -31,6 +32,14 @@ const RecentItem = props => {
 };
 
 export default class Home extends React.Component {
+    componentDidMount() {
+        let loggedin = localStorage.getItem('mojila-service-logged-in');
+
+        if (loggedin !== "logged-in") {
+            Router.push('/login');
+        }
+    }
+    
     render() {
         return (
             <div>
@@ -43,6 +52,7 @@ export default class Home extends React.Component {
                         <Menu>
                             <MenuItem icon={"ios-home-outline"}/>
                             <MenuItem icon={"ios-list-box-outline"}/>
+                            <MenuItem icon={"md-add"}/>
                         </Menu>
                     </Navigator>
                     <Content>
